@@ -6,5 +6,11 @@
             <span class="username"><t t-esc="env.pos.config.name" /> - </span>
         </xpath>
     </t>
+    
+    <t t-inherit="point_of_sale.CashierName" t-inherit-mode="extension" owl="1">
+        <xpath expr="//span[1]" position="before">
+            <span class="username"><t t-esc="env.pos.config.name" /> - </span>
+        </xpath>
+    </t>
 
 </templates>
